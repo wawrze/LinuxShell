@@ -1,0 +1,247 @@
+Script started on 2019-05-12 14:14:59+0200
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ ../s[K[K[K/script 
+total 2463296
+drwxr-xr-x   2 root root       4096 kwi  7 10:52 bin
+drwxr-xr-x   4 root root       4096 kwi  7 11:12 boot
+drwxr-xr-x   2 root root       4096 kwi  7 10:27 cdrom
+-rw-------   1 root root  458809344 kwi  7 10:54 core
+drwxr-xr-x  20 root root       4620 maj 12 14:06 dev
+drwxr-xr-x 150 root root      12288 maj 11 19:30 etc
+drwxr-xr-x   4 root root       4096 maj  5 11:58 home
+lrwxrwxrwx   1 root root         33 kwi  7 11:11 initrd.img -> boot/initrd.img-4.15.0-47-generic
+lrwxrwxrwx   1 root root         33 kwi  7 10:25 initrd.img.old -> boot/initrd.img-4.15.0-20-generic
+drwxr-xr-x  24 root root       4096 kwi  7 11:42 lib
+drwxr-xr-x   2 root root       4096 kwi  7 11:42 lib64
+drwx------   2 root root      16384 kwi  7 10:24 lost+found
+-rwxr-xr-x   1 root root      13552 kwi 10 18:00 lsh
+drwxr-xr-x   3 root root       4096 maj  5 12:08 media
+drwxr-xr-x   2 root root       4096 gru 17 16:00 mnt
+drwxr-xr-x   2 root root       4096 gru 17 16:00 opt
+dr-xr-xr-x 249 root root          0 maj 12 13:31 proc
+drwx------   9 root root       4096 maj  5 13:33 root
+drwxr-xr-x  34 root root       1020 maj 12 13:36 run
+drwxr-xr-x   2 root root      12288 kwi  7 10:52 sbin
+-rwxr-xr-x   1 root root      13800 kwi 11 17:36 shell
+drwxr-xr-x   2 root root       4096 gru 17 16:00 srv
+-rw-------   1 root root 2147483648 kwi  7 10:25 swapfile
+dr-xr-xr-x  13 root root          0 maj 12 13:37 sys
+drwxr-xr-x   9 root root       4096 maj 12 13:43 timeshift
+drwxrwxrwt  16 root root       4096 maj 12 14:14 tmp
+drwxr-xr-x  12 root root       4096 kwi  7 11:42 usr
+drwxr-xr-x  12 root root       4096 gru 17 16:33 var
+lrwxrwxrwx   1 root root         30 kwi  7 11:11 vmlinuz -> boot/vmlinuz-4.15.0-47-generic
+lrwxrwxrwx   1 root root         30 kwi  7 11:11 vmlinuz.old -> boot/vmlinuz-4.15.0-20-generic
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ [Parent 7816, Gecko_IOThread] WARNING: pipe error (60): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ [H[2J]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make
+cc    -c -o executor.o executor.c
+gcc shell.o commands.o history.o reader.o executor.o signals.o time.o -o shell
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ ./shell 
+wawrze:/home/wawrze/C_projects/shell$ firefox &
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 1wawrze:/home/wawrze/C_projects/shell$ [Parent 8460, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 8460, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ ^[[A
+>>>>>> [A (null)
+>>>>>> exec_in_bg = 0wawrze:/home/wawrze/C_projects/shell$ >>>>>> exec_in_bg = 0"[A" is not correct command or executable!
+
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ exit
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make
+cc    -c -o executor.o executor.c
+gcc shell.o commands.o history.o reader.o executor.o signals.o time.o -o shell
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make./shell 
+wawrze:/home/wawrze/C_projects/shell$ firefox &
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 1
+
+wawrze:/home/wawrze/C_projects/shell$ [Parent 8705, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 8705, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ firefox
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 0
+
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ [Parent 8942, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 8942, Gecko_IOThread] WARNING: pipe error (59): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ exit
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ ./shell [4Pmake
+make: Nothing to be done for 'all'.
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make./shell 
+wawrze:/home/wawrze/C_projects/shell$ firefox
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 0
+
+^C
+
+Kill signal sent to process 9185 ("firefox")
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+wawrze:/home/wawrze/C_projects/shell$ exit
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make
+cc    -c -o executor.o executor.c
+gcc shell.o commands.o history.o reader.o executor.o signals.o time.o -o shell
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make./shell 
+wawrze:/home/wawrze/C_projects/shell$ firefox
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 0
+
+[Parent 9459, Gecko_IOThread] WARNING: pipe error (42): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 9459, Gecko_IOThread] WARNING: pipe error (133): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+wawrze:/home/wawrze/C_projects/shell$ firefox &
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 1
+
+wawrze:/home/wawrze/C_projects/shell$ [Parent 9757, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 9757, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ firefox &
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 1
+
+wawrze:/home/wawrze/C_projects/shell$ [Parent 9998, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 9998, Gecko_IOThread] WARNING: pipe error (98): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ ^[[A    firefox &
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 1
+
+wawrze:/home/wawrze/C_projects/shell$ [Parent 10234, Gecko_IOThread] WARNING: pipe error (102): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 10234, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ firefox
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 0
+
+wawrze:/home/wawrze/C_projects/shell$ [Parent 10494, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 10494, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ exit
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make
+cc    -c -o executor.o executor.c
+gcc shell.o commands.o history.o reader.o executor.o signals.o time.o -o shell
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make./shell 
+wawrze:/home/wawrze/C_projects/shell$ firefox
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 0
+
+[Parent 10754, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 10754, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+wawrze:/home/wawrze/C_projects/shell$ ^[[A    firefox
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 0
+
+[Parent 10995, Gecko_IOThread] WARNING: pipe error (93): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 10995, Gecko_IOThread] WARNING: pipe error (56): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+wawrze:/home/wawrze/C_projects/shell$ firefox
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 0
+
+[Parent 11239, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 11239, Gecko_IOThread] WARNING: pipe error (59): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+wawrze:/home/wawrze/C_projects/shell$ fierfox       firefox &
+wawrze:/home/wawrze/C_projects/shell$ [Parent 11474, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ firefox
+
+>>>>>> firefox (null)
+>>>>>> exec_in_bg = 0
+
+wawrze:/home/wawrze/C_projects/shell$ [Parent 11708, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 11708, Gecko_IOThread] WARNING: pipe error (99): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ exit
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make
+cc    -c -o executor.o executor.c
+gcc shell.o commands.o history.o reader.o executor.o signals.o time.o -o shell
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make./shell 
+wawrze:/home/wawrze/C_projects/shell$ firefox
+[Parent 11980, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 11980, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+>>>>>>>>>>>>> 1>>>>>>>>>>>>> 2wawrze:/home/wawrze/C_projects/shell$ firefox &
+wawrze:/home/wawrze/C_projects/shell$ [Parent 12234, Gecko_IOThread] WARNING: pipe error (99): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 12234, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ firefox
+>>>>>>>>>>>>> 1>>>>>>>>>>>>> 2wawrze:/home/wawrze/C_projects/shell$ [Parent 12466, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 12466, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ exit
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make
+cc    -c -o executor.o executor.c
+gcc shell.o commands.o history.o reader.o executor.o signals.o time.o -o shell
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make./shell 
+wawrze:/home/wawrze/C_projects/shell$ firefox &
+wawrze:/home/wawrze/C_projects/shell$ [Parent 12927, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 12927, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ firefox
+>>>>>>>>>>>>> 1>>>>>>>>>>>>> 2wawrze:/home/wawrze/C_projects/shell$ [Parent 13178, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 13178, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+^C
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ ewz  zir   xit
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ 
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ 
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ 
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ 
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ 
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ ./shell [4Pmake
+cc    -c -o executor.o executor.c
+gcc shell.o commands.o history.o reader.o executor.o signals.o time.o -o shell
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ make./shell 
+wawrze:/home/wawrze/C_projects/shell$ firefox           sleep 5 &
+wawrze:/home/wawrze/C_projects/shell$ firefox &
+wawrze:/home/wawrze/C_projects/shell$ [Parent 13559, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 13559, Gecko_IOThread] WARNING: pipe error (106): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+^C
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ 
+wawrze:/home/wawrze/C_projects/shell$ firefox
+[Parent 13802, Gecko_IOThread] WARNING: pipe error (46): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 13802, Gecko_IOThread] WARNING: pipe error (106): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+wawrze:/home/wawrze/C_projects/shell$ firefox &
+wawrze:/home/wawrze/C_projects/shell$ [Parent 14038, Gecko_IOThread] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 14038, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+wawrze:/home/wawrze/C_projects/shell$ firefox
+[Parent 14282, Gecko_IOThread] WARNING: pipe error (109): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 14282, Gecko_IOThread] WARNING: pipe error (59): Connection reset by peer: file /build/firefox-z7Op23/firefox-66.0.2+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+wawrze:/home/wawrze/C_projects/shell$ sleep 10 &
+wawrze:/home/wawrze/C_projects/shell$ exit
+Goodbye!
+]0;wawrze@Hyperbook: ~/C_projects/shell[01;32mwawrze@Hyperbook[00m:[01;34m~/C_projects/shell[00m$ exit
+exit
+
+Script done on 2019-05-12 14:33:00+0200

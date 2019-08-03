@@ -1,0 +1,88 @@
+\hypertarget{executor_8c}{}\section{executor.\+c File Reference}
+\label{executor_8c}\index{executor.\+c@{executor.\+c}}
+{\ttfamily \#include \char`\"{}shell.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{executor_8c_a38ce9fb8be12b03640a8f1c94a8e4f2c}{execute\+\_\+command\+\_\+or\+\_\+program} (char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Calls built-\/in command or executes external program. \end{DoxyCompactList}\item 
+int \hyperlink{executor_8c_a686fef0ad33bc5f90fcabc31276090f5}{execute\+\_\+program} (char $\ast$$\ast$args, int exec\+\_\+in\+\_\+bg)
+\begin{DoxyCompactList}\small\item\em Executes external program. \end{DoxyCompactList}\item 
+void \hyperlink{executor_8c_a5b063ff4b62fde90e1a44e8c89d5ebc6}{print\+\_\+process\+\_\+signal} (int signum)
+\begin{DoxyCompactList}\small\item\em Prints information witch process has been killed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{executor_8c_a763303be5a9ead1e6065ffc2340b01fc}\label{executor_8c_a763303be5a9ead1e6065ffc2340b01fc}} 
+char $\ast$ \hyperlink{executor_8c_a763303be5a9ead1e6065ffc2340b01fc}{built\+\_\+in\+\_\+commands} \mbox{[}$\,$\mbox{]} = \{\char`\"{}cd\char`\"{}, \char`\"{}\hyperlink{shell_8h_a13166be76043b3dfccc0f830c846dc26}{help}\char`\"{}, \char`\"{}history\char`\"{}, \char`\"{}time\char`\"{}, \char`\"{}exit\char`\"{}\}
+\begin{DoxyCompactList}\small\item\em Array of built in commands. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{executor_8c_a7c855d8edb504957177d3eb3904cd9be}\label{executor_8c_a7c855d8edb504957177d3eb3904cd9be}} 
+char \hyperlink{executor_8c_a7c855d8edb504957177d3eb3904cd9be}{active\+\_\+process\+\_\+name} \mbox{[}\hyperlink{shell_8h_aa9b8dcc02cea15aab8e3d0b7860327a7}{I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Last executed program name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{executor_8c_a1239c1ad5d45564a81c1e3b8e01aeb98}\label{executor_8c_a1239c1ad5d45564a81c1e3b8e01aeb98}} 
+int \hyperlink{executor_8c_a1239c1ad5d45564a81c1e3b8e01aeb98}{active\+\_\+process\+\_\+id}
+\begin{DoxyCompactList}\small\item\em Id of process that executes program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Mateusz Wawreszuk 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{executor_8c_a38ce9fb8be12b03640a8f1c94a8e4f2c}\label{executor_8c_a38ce9fb8be12b03640a8f1c94a8e4f2c}} 
+\index{executor.\+c@{executor.\+c}!execute\+\_\+command\+\_\+or\+\_\+program@{execute\+\_\+command\+\_\+or\+\_\+program}}
+\index{execute\+\_\+command\+\_\+or\+\_\+program@{execute\+\_\+command\+\_\+or\+\_\+program}!executor.\+c@{executor.\+c}}
+\subsubsection{\texorpdfstring{execute\+\_\+command\+\_\+or\+\_\+program()}{execute\_command\_or\_program()}}
+{\footnotesize\ttfamily int execute\+\_\+command\+\_\+or\+\_\+program (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Calls built-\/in command or executes external program. 
+
+Checks if program should be executed in background (first argument is \char`\"{}\&\char`\"{}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & array of command and its arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+execution success or error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{executor_8c_a686fef0ad33bc5f90fcabc31276090f5}\label{executor_8c_a686fef0ad33bc5f90fcabc31276090f5}} 
+\index{executor.\+c@{executor.\+c}!execute\+\_\+program@{execute\+\_\+program}}
+\index{execute\+\_\+program@{execute\+\_\+program}!executor.\+c@{executor.\+c}}
+\subsubsection{\texorpdfstring{execute\+\_\+program()}{execute\_program()}}
+{\footnotesize\ttfamily int execute\+\_\+program (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args,  }\item[{int}]{exec\+\_\+in\+\_\+bg }\end{DoxyParamCaption})}
+
+
+
+Executes external program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & array of command and its arguments \\
+\hline
+{\em exec\+\_\+in\+\_\+bg} & 1 if program should be executed in background, 0 if not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+W\+Y\+J\+S\+C\+IE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{executor_8c_a5b063ff4b62fde90e1a44e8c89d5ebc6}\label{executor_8c_a5b063ff4b62fde90e1a44e8c89d5ebc6}} 
+\index{executor.\+c@{executor.\+c}!print\+\_\+process\+\_\+signal@{print\+\_\+process\+\_\+signal}}
+\index{print\+\_\+process\+\_\+signal@{print\+\_\+process\+\_\+signal}!executor.\+c@{executor.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+process\+\_\+signal()}{print\_process\_signal()}}
+{\footnotesize\ttfamily void print\+\_\+process\+\_\+signal (\begin{DoxyParamCaption}\item[{int}]{signum }\end{DoxyParamCaption})}
+
+
+
+Prints information witch process has been killed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signum} & signal number \\
+\hline
+\end{DoxyParams}

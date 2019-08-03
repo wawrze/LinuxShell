@@ -1,0 +1,79 @@
+\hypertarget{history_8c}{}\section{history.\+c File Reference}
+\label{history_8c}\index{history.\+c@{history.\+c}}
+{\ttfamily \#include \char`\"{}shell.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{history_8c_a5fb80f885af4c12056db03cc45a6aae9}\label{history_8c_a5fb80f885af4c12056db03cc45a6aae9}} 
+void \hyperlink{history_8c_a5fb80f885af4c12056db03cc45a6aae9}{history\+\_\+clean\+\_\+up} ()
+\begin{DoxyCompactList}\small\item\em Frees memory, saves commands history to file. \end{DoxyCompactList}\item 
+void \hyperlink{history_8c_ae8516142b2cb36ede692dfca4a36d8cc}{initialize\+\_\+commands\+\_\+history} ()
+\begin{DoxyCompactList}\small\item\em Initializes commands history. \end{DoxyCompactList}\item 
+int \hyperlink{history_8c_abcf676d5284d55cb7835a81a80619a48}{print\+\_\+history} ()
+\begin{DoxyCompactList}\small\item\em Prints commands history to standard output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{history_8c_ac4ba99969792ae3f877c857cedb129a9}\label{history_8c_ac4ba99969792ae3f877c857cedb129a9}} 
+void \hyperlink{history_8c_ac4ba99969792ae3f877c857cedb129a9}{save\+\_\+history\+\_\+to\+\_\+file} ()
+\begin{DoxyCompactList}\small\item\em Saves command\+\_\+history array to file. \end{DoxyCompactList}\item 
+void \hyperlink{history_8c_aca67f770a00272dc2993db7d854c9c48}{save\+\_\+to\+\_\+history} (char $\ast$input)
+\begin{DoxyCompactList}\small\item\em Saves command to history. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{history_8c_a52ed4b61ce335f0c68e3fb90487fe512}\label{history_8c_a52ed4b61ce335f0c68e3fb90487fe512}} 
+char $\ast$$\ast$ \hyperlink{history_8c_a52ed4b61ce335f0c68e3fb90487fe512}{commands\+\_\+history}
+\begin{DoxyCompactList}\small\item\em Array to store commands history. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{history_8c_a259d6d81496e72255f0b1222ed592dde}\label{history_8c_a259d6d81496e72255f0b1222ed592dde}} 
+char $\ast$ \hyperlink{history_8c_a259d6d81496e72255f0b1222ed592dde}{history\+\_\+file\+\_\+path}
+\begin{DoxyCompactList}\small\item\em Commands history file path -\/ users home directory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{history_8c_a73081c43fc7a8aac4707723496bb02dc}\label{history_8c_a73081c43fc7a8aac4707723496bb02dc}} 
+volatile int \hyperlink{history_8c_a73081c43fc7a8aac4707723496bb02dc}{history\+\_\+counter} = 0
+\begin{DoxyCompactList}\small\item\em Pointer to last position in commands history array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Mateusz Wawreszuk 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{history_8c_ae8516142b2cb36ede692dfca4a36d8cc}\label{history_8c_ae8516142b2cb36ede692dfca4a36d8cc}} 
+\index{history.\+c@{history.\+c}!initialize\+\_\+commands\+\_\+history@{initialize\+\_\+commands\+\_\+history}}
+\index{initialize\+\_\+commands\+\_\+history@{initialize\+\_\+commands\+\_\+history}!history.\+c@{history.\+c}}
+\subsubsection{\texorpdfstring{initialize\+\_\+commands\+\_\+history()}{initialize\_commands\_history()}}
+{\footnotesize\ttfamily void initialize\+\_\+commands\+\_\+history (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes commands history. 
+
+Allocates commands\+\_\+history array and reads current history from file. Sets history\+\_\+counter pointer to commands\+\_\+history size. \mbox{\Hypertarget{history_8c_abcf676d5284d55cb7835a81a80619a48}\label{history_8c_abcf676d5284d55cb7835a81a80619a48}} 
+\index{history.\+c@{history.\+c}!print\+\_\+history@{print\+\_\+history}}
+\index{print\+\_\+history@{print\+\_\+history}!history.\+c@{history.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+history()}{print\_history()}}
+{\footnotesize\ttfamily int print\+\_\+history (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints commands history to standard output. 
+
+\begin{DoxyReturn}{Returns}
+success code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{history_8c_aca67f770a00272dc2993db7d854c9c48}\label{history_8c_aca67f770a00272dc2993db7d854c9c48}} 
+\index{history.\+c@{history.\+c}!save\+\_\+to\+\_\+history@{save\+\_\+to\+\_\+history}}
+\index{save\+\_\+to\+\_\+history@{save\+\_\+to\+\_\+history}!history.\+c@{history.\+c}}
+\subsubsection{\texorpdfstring{save\+\_\+to\+\_\+history()}{save\_to\_history()}}
+{\footnotesize\ttfamily void save\+\_\+to\+\_\+history (\begin{DoxyParamCaption}\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+
+
+
+Saves command to history. 
+
+If history\+\_\+counter pointer points that history is full, removes first command from history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & command to save \\
+\hline
+\end{DoxyParams}

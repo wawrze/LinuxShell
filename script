@@ -1,0 +1,6 @@
+#!/home/wawrze/C_projects/shell/shell
+
+cd /
+ls -l
+firefox &
+exit

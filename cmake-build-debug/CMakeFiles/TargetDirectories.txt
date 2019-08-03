@@ -1,0 +1,9 @@
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/time.dir
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/signals.dir
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/history.dir
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/commands.dir
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/read.dir
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/shell.dir
+/home/wawrze/C_projects/shell/cmake-build-debug/CMakeFiles/executor.dir

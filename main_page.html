@@ -1,0 +1,49 @@
+<html>
+<body>
+<table>
+	<tr>
+		<td style="font-weight: bold;">Author</td>
+		<td  style="font-weight: bold;">:</td>
+		<td>Mateusz Wawreszuk</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Project</td>
+		<td  style="font-weight: bold;">:</td>
+		<td>2. Prosta tekstowa powłoka systemowa (shell)</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;" valign="top">Exercise&nbsp;content</td>
+		<td  style="font-weight: bold;" valign="top">:</td>
+		<td><br>
+                Shell pobiera ze standardowego wejścia pojedynczy wiersz, a następnie dokonuje prostej analizy wiersza dzieląc go na słowa separowane spacjami. Pierwsze słowo jest nazwą programu, a pozostałe są argumentami. Procesy są uruchamiane poprzez wywołanie systemowe execvp. Shell uruchamia program i standardowo czeka na zakończenie jego pracy, chyba ze ostatnim słowem jest znak & co powoduje uruchomienie programu w tle, jak w standardowym shellu bash.<br><br>
+
+                Shell kończy pracę gdy otrzyma znak końca pliku. Dzięki temu możliwe jest przygotowanie prostych skryptów, które można uruchamiać z wiersza poleceń bash-a. Pierwsza linia skryptu powinna mieć postać np. #!/home/student/moj_shell (gdzie po ! podaje się ścieżkę do programu shella). Plik zawierający skrypt powinien być przekazany do powłoki jako argument przy jej uruchamianiu.<br><br>
+
+                Shell przechowuje dokładną treść 20 ostatnich poleceń. Historia jest przechowywana w zewnętrznym pliku w katalogu domowym użytkownika, więc może ”przetrwać” zakończenie shella. Wysłanie sygnału SIGQUIT powoduje wyświetlenie historii na standardowym wyjściu.<br><br>
+
+				<b>Dodatkowo:</b>
+                <ul>
+                    <li>W powłokę wbudowano kilka komend:
+                        <ul>
+                            <li>cd - służy do zmiany aktualnego katalogu (tak jak w bash-u)</li>
+                            <li>help - wyświetla listę komend</li>
+                            <li>history - działa tak samo jak sygnał SIGQUIT (wyświetla historię komend)</li>
+                            <li>time - wyświetla aktualną datę i godzinę</li>
+                            <li>exit - wyjście z powłoki</li>
+                        </ul>
+                    </li>
+                    <li>Wiersz polecenia zawiera nazwę użytkownika, aktualny katalog roboczy oraz oznaczenie uprawnień użytkownika (# superuser, $ zwykły użytkownik).</li>
+                    <li>Dodano przechwytywanie sygnałów SIGINT i SIGTSTP - wysłanie tych sygnałów nie spowoduje zakończenia pracy powłoki, tylko aktualnie wykonywanego procesu.</li>
+                    <li>Historia komend zawiera datę i czas ich wywołania.</li>
+                </ul>
+		</td>
+				
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Summary</td>
+		<td  style="font-weight: bold;">:</td>
+		<td>Wykonano ćwiczenie wraz ze wszystkimi dodatkowymi wytycznymi.</td>
+	</tr>
+</table>
+</body>
+</html>

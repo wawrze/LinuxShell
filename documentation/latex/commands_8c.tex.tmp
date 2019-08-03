@@ -1,0 +1,91 @@
+\hypertarget{commands_8c}{}\section{commands.\+c File Reference}
+\label{commands_8c}\index{commands.\+c@{commands.\+c}}
+{\ttfamily \#include \char`\"{}shell.\+h\char`\"{}}\newline
+Include dependency graph for commands.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{commands_8c_a069f9558baae3a064ba0e1b54456ccab}{cd} (char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Change directory command. \end{DoxyCompactList}\item 
+int \hyperlink{commands_8c_a3224f605963ffa2708e3e4cc3d8bb41e}{execute\+\_\+command} (int command\+\_\+number, char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Calls built-\/in command. \end{DoxyCompactList}\item 
+int \hyperlink{commands_8c_a13166be76043b3dfccc0f830c846dc26}{help} ()
+\begin{DoxyCompactList}\small\item\em Prints list of built-\/in commands and other functionalities. \end{DoxyCompactList}\item 
+int \hyperlink{commands_8c_a480f710944fe509e060ee055ff64fa88}{print\+\_\+time} ()
+\begin{DoxyCompactList}\small\item\em Prints current date and time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Mateusz Wawreszuk 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{commands_8c_a069f9558baae3a064ba0e1b54456ccab}\label{commands_8c_a069f9558baae3a064ba0e1b54456ccab}} 
+\index{commands.\+c@{commands.\+c}!cd@{cd}}
+\index{cd@{cd}!commands.\+c@{commands.\+c}}
+\subsubsection{\texorpdfstring{cd()}{cd()}}
+{\footnotesize\ttfamily int cd (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Change directory command. 
+
+If change is not possible, prints to standard output error message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+execution success or error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{commands_8c_a3224f605963ffa2708e3e4cc3d8bb41e}\label{commands_8c_a3224f605963ffa2708e3e4cc3d8bb41e}} 
+\index{commands.\+c@{commands.\+c}!execute\+\_\+command@{execute\+\_\+command}}
+\index{execute\+\_\+command@{execute\+\_\+command}!commands.\+c@{commands.\+c}}
+\subsubsection{\texorpdfstring{execute\+\_\+command()}{execute\_command()}}
+{\footnotesize\ttfamily int execute\+\_\+command (\begin{DoxyParamCaption}\item[{int}]{command\+\_\+number,  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Calls built-\/in command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+number} & number of command in built\+\_\+in\+\_\+commands array \\
+\hline
+{\em args} & arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+execution success or error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{commands_8c_a13166be76043b3dfccc0f830c846dc26}\label{commands_8c_a13166be76043b3dfccc0f830c846dc26}} 
+\index{commands.\+c@{commands.\+c}!help@{help}}
+\index{help@{help}!commands.\+c@{commands.\+c}}
+\subsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily int help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints list of built-\/in commands and other functionalities. 
+
+\begin{DoxyReturn}{Returns}
+success code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{commands_8c_a480f710944fe509e060ee055ff64fa88}\label{commands_8c_a480f710944fe509e060ee055ff64fa88}} 
+\index{commands.\+c@{commands.\+c}!print\+\_\+time@{print\+\_\+time}}
+\index{print\+\_\+time@{print\+\_\+time}!commands.\+c@{commands.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+time()}{print\_time()}}
+{\footnotesize\ttfamily int print\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints current date and time. 
+
+\begin{DoxyReturn}{Returns}
+success code 
+\end{DoxyReturn}

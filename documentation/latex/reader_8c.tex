@@ -1,0 +1,97 @@
+\hypertarget{reader_8c}{}\section{reader.\+c File Reference}
+\label{reader_8c}\index{reader.\+c@{reader.\+c}}
+{\ttfamily \#include \char`\"{}shell.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{reader_8c_aa2deaf0f63ca4a73a37b86d05678fb46}\label{reader_8c_aa2deaf0f63ca4a73a37b86d05678fb46}} 
+void \hyperlink{reader_8c_aa2deaf0f63ca4a73a37b86d05678fb46}{main\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em Waits for input and executes it. \end{DoxyCompactList}\item 
+void \hyperlink{reader_8c_a87a73ece208da0ed13ff48923efa6a8f}{main\+\_\+loop\+\_\+file} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Reads script file and executes every line. \end{DoxyCompactList}\item 
+void \hyperlink{reader_8c_a21579a20737c3b2b24e18bb5e51d8140}{print\+\_\+prompt} ()
+\begin{DoxyCompactList}\small\item\em Prints command prompt. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{reader_8c_a6d4d28fe8b4a7cad21ec581450abe1b1}\label{reader_8c_a6d4d28fe8b4a7cad21ec581450abe1b1}} 
+void \hyperlink{reader_8c_a6d4d28fe8b4a7cad21ec581450abe1b1}{read\+\_\+clean\+\_\+up} ()
+\begin{DoxyCompactList}\small\item\em Frees memory. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{reader_8c_a777131faf4806e7eee788b65cab4a584}{read\+\_\+line} ()
+\begin{DoxyCompactList}\small\item\em Reads one line from standard input. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{reader_8c_a9c985d892b630e70b2236554b46faa4b}{split\+\_\+input} (char $\ast$input)
+\begin{DoxyCompactList}\small\item\em Splits input to words (command and its arguments). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{reader_8c_a62b3e552188dc2021715c1be2bd60267}\label{reader_8c_a62b3e552188dc2021715c1be2bd60267}} 
+void \hyperlink{reader_8c_a62b3e552188dc2021715c1be2bd60267}{update\+\_\+prompt} ()
+\begin{DoxyCompactList}\small\item\em Updates prompt with username and current path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{reader_8c_a5332aadd744ac89bd68c49c14286adeb}\label{reader_8c_a5332aadd744ac89bd68c49c14286adeb}} 
+char $\ast$ \hyperlink{reader_8c_a5332aadd744ac89bd68c49c14286adeb}{command\+\_\+prompt}
+\begin{DoxyCompactList}\small\item\em Array of characters to store command prompt. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{reader_8c_a9b20c006bd90a09e1465fb668700e81d}\label{reader_8c_a9b20c006bd90a09e1465fb668700e81d}} 
+char $\ast$ \hyperlink{reader_8c_a9b20c006bd90a09e1465fb668700e81d}{username}
+\begin{DoxyCompactList}\small\item\em Array of characters to store current users name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Mateusz Wawreszuk 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{reader_8c_a87a73ece208da0ed13ff48923efa6a8f}\label{reader_8c_a87a73ece208da0ed13ff48923efa6a8f}} 
+\index{reader.\+c@{reader.\+c}!main\+\_\+loop\+\_\+file@{main\+\_\+loop\+\_\+file}}
+\index{main\+\_\+loop\+\_\+file@{main\+\_\+loop\+\_\+file}!reader.\+c@{reader.\+c}}
+\subsubsection{\texorpdfstring{main\+\_\+loop\+\_\+file()}{main\_loop\_file()}}
+{\footnotesize\ttfamily void main\+\_\+loop\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Reads script file and executes every line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & script file name and path \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{reader_8c_a21579a20737c3b2b24e18bb5e51d8140}\label{reader_8c_a21579a20737c3b2b24e18bb5e51d8140}} 
+\index{reader.\+c@{reader.\+c}!print\+\_\+prompt@{print\+\_\+prompt}}
+\index{print\+\_\+prompt@{print\+\_\+prompt}!reader.\+c@{reader.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+prompt()}{print\_prompt()}}
+{\footnotesize\ttfamily void print\+\_\+prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints command prompt. 
+
+Command prompt contains\+: current user, current working directory, \# if current user is superuser or \$ for other users \mbox{\Hypertarget{reader_8c_a777131faf4806e7eee788b65cab4a584}\label{reader_8c_a777131faf4806e7eee788b65cab4a584}} 
+\index{reader.\+c@{reader.\+c}!read\+\_\+line@{read\+\_\+line}}
+\index{read\+\_\+line@{read\+\_\+line}!reader.\+c@{reader.\+c}}
+\subsubsection{\texorpdfstring{read\+\_\+line()}{read\_line()}}
+{\footnotesize\ttfamily char$\ast$ read\+\_\+line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads one line from standard input. 
+
+\begin{DoxyReturn}{Returns}
+line as char array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{reader_8c_a9c985d892b630e70b2236554b46faa4b}\label{reader_8c_a9c985d892b630e70b2236554b46faa4b}} 
+\index{reader.\+c@{reader.\+c}!split\+\_\+input@{split\+\_\+input}}
+\index{split\+\_\+input@{split\+\_\+input}!reader.\+c@{reader.\+c}}
+\subsubsection{\texorpdfstring{split\+\_\+input()}{split\_input()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ split\+\_\+input (\begin{DoxyParamCaption}\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+
+
+
+Splits input to words (command and its arguments). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & single input line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of command and arguments 
+\end{DoxyReturn}

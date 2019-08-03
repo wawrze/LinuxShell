@@ -1,0 +1,49 @@
+\hypertarget{shell_8c}{}\section{shell.\+c File Reference}
+\label{shell_8c}\index{shell.\+c@{shell.\+c}}
+{\ttfamily \#include \char`\"{}shell.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{shell_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Shells main function. \end{DoxyCompactList}\item 
+void \hyperlink{shell_8c_ada7f892aa09adca3647631590ca1beb0}{clean\+\_\+up} ()
+\begin{DoxyCompactList}\small\item\em Cleans up before exit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Mateusz Wawreszuk 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{shell_8c_ada7f892aa09adca3647631590ca1beb0}\label{shell_8c_ada7f892aa09adca3647631590ca1beb0}} 
+\index{shell.\+c@{shell.\+c}!clean\+\_\+up@{clean\+\_\+up}}
+\index{clean\+\_\+up@{clean\+\_\+up}!shell.\+c@{shell.\+c}}
+\subsubsection{\texorpdfstring{clean\+\_\+up()}{clean\_up()}}
+{\footnotesize\ttfamily void clean\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cleans up before exit. 
+
+Frees memory and saves commands history to file. \mbox{\Hypertarget{shell_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{shell_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{shell.\+c@{shell.\+c}!main@{main}}
+\index{main@{main}!shell.\+c@{shell.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Shells main function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & arguments count \\
+\hline
+{\em argv} & arguments array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+X\+I\+T\+\_\+\+S\+U\+C\+E\+SS or error code 
+\end{DoxyReturn}

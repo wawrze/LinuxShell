@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wawrze/C_projects/shell/reader.c
+shell.h
+/home/wawrze/C_projects/shell/shell.h
+
+/home/wawrze/C_projects/shell/shell.h
+errno.h
+-
+pwd.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/wait.h
+-
+unistd.h
+-
+

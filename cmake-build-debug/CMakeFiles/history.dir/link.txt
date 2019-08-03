@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/history.dir/history.c.o  -o history 
